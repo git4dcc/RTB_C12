@@ -1,0 +1,517 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 5 5
+Title "RTB C12 Bus Module"
+Date "2023-10-22"
+Rev "1"
+Comp "Frank Schumacher"
+Comment1 "C12.0"
+Comment2 "Booster"
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text GLabel 1200 2250 0    50   Input ~ 0
+INB
+Text GLabel 1200 2350 0    50   Input ~ 0
+INA
+Wire Wire Line
+	1200 2350 2550 2350
+Wire Wire Line
+	2550 2550 2300 2550
+Wire Wire Line
+	2300 2550 2300 3250
+Wire Wire Line
+	3750 2150 4150 2150
+Wire Wire Line
+	4150 2150 4150 2750
+Wire Wire Line
+	3750 2350 4450 2350
+Wire Wire Line
+	4450 2350 4450 1350
+Text GLabel 1200 1350 0    50   Input ~ 0
+3.3V
+Wire Wire Line
+	2550 2450 2200 2450
+Wire Wire Line
+	2200 2450 2200 3350
+Wire Wire Line
+	2200 3350 4450 3350
+Wire Wire Line
+	4450 3350 4450 2850
+Text GLabel 6550 2550 2    50   Output ~ 0
+DCC-A'
+Text GLabel 6550 2850 2    50   Output ~ 0
+DCC-B
+$Comp
+L power:GNDD #PWR014
+U 1 1 5CA8D901
+P 3850 2900
+F 0 "#PWR014" H 3850 2650 50  0001 C CNN
+F 1 "GNDD" H 3854 2745 50  0000 C CNN
+F 2 "" H 3850 2900 50  0001 C CNN
+F 3 "" H 3850 2900 50  0001 C CNN
+	1    3850 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3850 2900 3850 2750
+Wire Wire Line
+	3850 2750 4150 2750
+Connection ~ 4150 2750
+$Comp
+L Device:C C21
+U 1 1 5CA926D7
+P 1900 1750
+F 0 "C21" H 2015 1796 50  0000 L CNN
+F 1 "1uF" H 2015 1705 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 1938 1600 50  0001 C CNN
+F 3 "~" H 1900 1750 50  0001 C CNN
+	1    1900 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1900 1600 1900 1350
+$Comp
+L power:GNDD #PWR029
+U 1 1 5CA93284
+P 1900 1900
+F 0 "#PWR029" H 1900 1650 50  0001 C CNN
+F 1 "GNDD" H 1904 1745 50  0000 C CNN
+F 2 "" H 1900 1900 50  0001 C CNN
+F 3 "" H 1900 1900 50  0001 C CNN
+	1    1900 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1200 1350 1900 1350
+Wire Wire Line
+	2550 2150 2300 2150
+Wire Wire Line
+	2300 2150 2300 1350
+Connection ~ 2300 1350
+Wire Wire Line
+	1200 2250 2550 2250
+$Comp
+L Amplifier_Current:INA181 U3
+U 1 1 5D781DC7
+P 6700 1700
+F 0 "U3" H 7044 1746 50  0000 L CNN
+F 1 "INA181" H 7044 1655 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-6" H 6750 1750 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/ina181.pdf" H 6850 1850 50  0001 C CNN
+	1    6700 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R17
+U 1 1 5D782B69
+P 5800 2450
+F 0 "R17" V 5593 2450 50  0000 C CNN
+F 1 "0.05" V 5684 2450 50  0000 C CNN
+F 2 "Resistor_SMD:R_2010_5025Metric" V 5730 2450 50  0001 C CNN
+F 3 "~" H 5800 2450 50  0001 C CNN
+	1    5800 2450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5950 2450 6050 2450
+Wire Wire Line
+	4150 2750 4150 3250
+Wire Wire Line
+	4450 2850 5100 2850
+Wire Wire Line
+	3750 2450 5100 2450
+Wire Wire Line
+	3750 2550 4950 2550
+Wire Wire Line
+	6050 2450 6050 1600
+Wire Wire Line
+	6050 1600 6400 1600
+Wire Wire Line
+	6400 1800 5550 1800
+Wire Wire Line
+	5550 1800 5550 2450
+Connection ~ 5550 2450
+Wire Wire Line
+	5550 2450 5650 2450
+Wire Wire Line
+	6600 2000 6600 2100
+Wire Wire Line
+	6600 2100 6800 2100
+Wire Wire Line
+	6800 2100 6800 2000
+$Comp
+L power:GNDD #PWR011
+U 1 1 5D7907A3
+P 6600 2100
+F 0 "#PWR011" H 6600 1850 50  0001 C CNN
+F 1 "GNDD" H 6604 1945 50  0000 C CNN
+F 2 "" H 6600 2100 50  0001 C CNN
+F 3 "" H 6600 2100 50  0001 C CNN
+	1    6600 2100
+	1    0    0    -1  
+$EndComp
+Connection ~ 6600 2100
+Wire Wire Line
+	4450 1350 5850 1350
+Wire Wire Line
+	6600 1350 6600 1400
+Connection ~ 4450 1350
+Wire Wire Line
+	7000 1700 7550 1700
+Text GLabel 7550 1700 2    50   Output ~ 0
+iSENSE
+Wire Wire Line
+	5550 5100 5850 5100
+Wire Wire Line
+	5550 5300 5850 5300
+Connection ~ 5850 5300
+$Comp
+L power:GNDD #PWR0105
+U 1 1 5D7D2AE5
+P 5850 5600
+F 0 "#PWR0105" H 5850 5350 50  0001 C CNN
+F 1 "GNDD" H 5854 5445 50  0000 C CNN
+F 2 "" H 5850 5600 50  0001 C CNN
+F 3 "" H 5850 5600 50  0001 C CNN
+	1    5850 5600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5850 5100 5850 5200
+Wire Wire Line
+	5550 5200 5850 5200
+Connection ~ 5850 5200
+Wire Wire Line
+	5850 5200 5850 5300
+Wire Wire Line
+	5550 4500 5850 4500
+Wire Wire Line
+	5550 4600 5850 4600
+Wire Wire Line
+	5850 4600 5850 4500
+Connection ~ 5850 4500
+Wire Wire Line
+	5850 4500 6150 4500
+Wire Wire Line
+	5550 4900 5850 4900
+Wire Wire Line
+	5850 4900 5850 5100
+Connection ~ 5850 5100
+Wire Wire Line
+	4450 4300 4250 4300
+Wire Wire Line
+	4450 4400 4250 4400
+Wire Wire Line
+	4250 4400 4250 4300
+Connection ~ 4250 4300
+Text GLabel 6150 4500 2    50   Output ~ 0
+VOP+
+Wire Wire Line
+	6050 2450 6550 2450
+Connection ~ 6050 2450
+Text GLabel 6550 2450 2    50   Input ~ 0
+VOP+
+Wire Wire Line
+	3750 2250 3850 2250
+Wire Wire Line
+	3850 2250 3850 2750
+Connection ~ 3850 2750
+Wire Wire Line
+	3800 4900 4450 4900
+Wire Wire Line
+	4450 4600 4050 4600
+Text GLabel 3800 5100 0    50   Output ~ 0
+OPAi
+Wire Wire Line
+	4450 4700 3800 4700
+Text GLabel 3800 4700 0    50   Input ~ 0
+OPA+
+Text GLabel 1950 4300 0    50   Input ~ 0
+VREG
+Text GLabel 5450 1800 0    50   Input ~ 0
+VOP-
+Wire Wire Line
+	5450 1800 5550 1800
+Connection ~ 5550 1800
+Text Notes 650  750  0    118  ~ 0
+Booster
+Wire Wire Line
+	2300 1350 4450 1350
+Connection ~ 1900 1350
+Wire Wire Line
+	1900 1350 2300 1350
+Wire Wire Line
+	2300 3250 3150 3250
+Connection ~ 4150 3250
+Text GLabel 6550 3250 2    50   Input ~ 0
+GNDD
+Wire Wire Line
+	4150 3250 5100 3250
+Wire Wire Line
+	3800 5200 4450 5200
+Wire Wire Line
+	3800 5100 4450 5100
+Text GLabel 3800 5200 0    50   Output ~ 0
+OPAt
+Connection ~ 3150 3250
+Wire Wire Line
+	3150 3250 4150 3250
+Wire Wire Line
+	4050 4600 4050 5000
+$Comp
+L Device:R R36
+U 1 1 5DCAA6CA
+P 4300 5000
+F 0 "R36" V 4093 5000 50  0001 C CNN
+F 1 "10k" V 4184 5000 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4230 5000 50  0001 C CNN
+F 3 "~" H 4300 5000 50  0001 C CNN
+	1    4300 5000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4150 5000 4050 5000
+Connection ~ 4050 5000
+Wire Wire Line
+	4050 5000 4050 5300
+$Comp
+L Sensor_Temperature:MCP9700AT-ETT U?
+U 1 1 5DCBDD55
+P 4700 6700
+AR Path="/5B6C6B9D/5DCBDD55" Ref="U?"  Part="1" 
+AR Path="/5CA7768A/5DCBDD55" Ref="U15"  Part="1" 
+F 0 "U15" H 4370 6746 50  0000 R CNN
+F 1 "MCP9700AT-ETT" H 4370 6655 50  0000 R CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 4700 6300 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21942e.pdf" H 4550 6950 50  0001 C CNN
+	1    4700 6700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR?
+U 1 1 5DCBDD5B
+P 4700 7000
+AR Path="/5B6C6B9D/5DCBDD5B" Ref="#PWR?"  Part="1" 
+AR Path="/5CA7768A/5DCBDD5B" Ref="#PWR0114"  Part="1" 
+F 0 "#PWR0114" H 4700 6750 50  0001 C CNN
+F 1 "GNDD" H 4705 6827 50  0000 C CNN
+F 2 "" H 4700 7000 50  0001 C CNN
+F 3 "" H 4700 7000 50  0001 C CNN
+	1    4700 7000
+	1    0    0    -1  
+$EndComp
+Text GLabel 4700 6400 1    50   Input ~ 0
+3.3V
+Text GLabel 5650 6700 2    50   Input ~ 0
+tSENSE
+Text GLabel 3800 4900 0    50   Input ~ 0
+3.3V
+Wire Wire Line
+	5400 6700 5500 6700
+Connection ~ 5500 6700
+Wire Wire Line
+	5500 6700 5650 6700
+$Comp
+L power:GNDD #PWR?
+U 1 1 5DDBF90B
+P 5500 7000
+AR Path="/5B6C6B9D/5DDBF90B" Ref="#PWR?"  Part="1" 
+AR Path="/5CA7768A/5DDBF90B" Ref="#PWR012"  Part="1" 
+F 0 "#PWR012" H 5500 6750 50  0001 C CNN
+F 1 "GNDD" H 5505 6827 50  0000 C CNN
+F 2 "" H 5500 7000 50  0001 C CNN
+F 3 "" H 5500 7000 50  0001 C CNN
+	1    5500 7000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R38
+U 1 1 5DDBC1CC
+P 5500 6850
+F 0 "R38" V 5400 6850 50  0000 C CNN
+F 1 "22k" V 5600 6850 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 5430 6850 50  0001 C CNN
+F 3 "~" H 5500 6850 50  0001 C CNN
+	1    5500 6850
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R37
+U 1 1 5DDBB3C4
+P 5250 6700
+F 0 "R37" V 5150 6700 50  0000 C CNN
+F 1 "22k" V 5350 6700 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 5180 6700 50  0001 C CNN
+F 3 "~" H 5250 6700 50  0001 C CNN
+	1    5250 6700
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R46
+U 1 1 5E21B701
+P 5800 2700
+F 0 "R46" V 5593 2700 50  0000 C CNN
+F 1 "10k" V 5684 2700 50  0000 C CNN
+F 2 "Inductor_SMD:L_0603_1608Metric" V 5730 2700 50  0001 C CNN
+F 3 "~" H 5800 2700 50  0001 C CNN
+	1    5800 2700
+	-1   0    0    1   
+$EndComp
+Connection ~ 5800 2550
+Wire Wire Line
+	5800 2550 6550 2550
+Connection ~ 5800 2850
+Wire Wire Line
+	5800 2850 6550 2850
+$Comp
+L Device:C C20
+U 1 1 5E239121
+P 5850 1500
+F 0 "C20" H 5965 1546 50  0000 L CNN
+F 1 "100n" H 5965 1455 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5888 1350 50  0001 C CNN
+F 3 "~" H 5850 1500 50  0001 C CNN
+	1    5850 1500
+	1    0    0    -1  
+$EndComp
+Connection ~ 5850 1350
+Wire Wire Line
+	5850 1350 6600 1350
+Wire Wire Line
+	6600 2100 5850 2100
+Wire Wire Line
+	5850 2100 5850 1650
+$Comp
+L Mechanical:Heatsink HS1
+U 1 1 5F497BB4
+P 5050 3800
+F 0 "HS1" H 5192 3921 50  0000 L CNN
+F 1 "Heatsink" H 5192 3830 50  0000 L CNN
+F 2 "Heatsink:Heatsink_AAVID_573300D00010G_TO-263" H 5062 3800 50  0001 C CNN
+F 3 "~" H 5062 3800 50  0001 C CNN
+	1    5050 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R35
+U 1 1 5F53749D
+P 5100 3050
+F 0 "R35" V 4893 3050 50  0000 C CNN
+F 1 "10k" V 4984 3050 50  0000 C CNN
+F 2 "Inductor_SMD:L_0603_1608Metric" V 5030 3050 50  0001 C CNN
+F 3 "~" H 5100 3050 50  0001 C CNN
+	1    5100 3050
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5100 3200 5100 3250
+Connection ~ 5100 3250
+Wire Wire Line
+	5100 3250 6550 3250
+Wire Wire Line
+	5100 2900 5100 2850
+Connection ~ 5100 2850
+Wire Wire Line
+	5100 2850 5800 2850
+$Comp
+L Device:R R31
+U 1 1 5F53EFFE
+P 5100 2200
+F 0 "R31" V 4893 2200 50  0000 C CNN
+F 1 "10k" V 4984 2200 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 5030 2200 50  0001 C CNN
+F 3 "~" H 5100 2200 50  0001 C CNN
+	1    5100 2200
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5100 2350 5100 2450
+Connection ~ 5100 2450
+Wire Wire Line
+	5100 2450 5550 2450
+Wire Wire Line
+	5100 2050 4950 2050
+Wire Wire Line
+	4950 2050 4950 2550
+Connection ~ 4950 2550
+Wire Wire Line
+	4950 2550 5800 2550
+$Comp
+L Device:R R15
+U 1 1 5F7B7441
+P 4300 5300
+F 0 "R15" V 4093 5300 50  0001 C CNN
+F 1 "10k" V 4184 5300 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4230 5300 50  0001 C CNN
+F 3 "~" H 4300 5300 50  0001 C CNN
+	1    4300 5300
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R16
+U 1 1 5F7B78D9
+P 4300 5400
+F 0 "R16" V 4093 5400 50  0001 C CNN
+F 1 "10k" V 4184 5400 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4230 5400 50  0001 C CNN
+F 3 "~" H 4300 5400 50  0001 C CNN
+	1    4300 5400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4450 5300 4450 5400
+Connection ~ 4450 5300
+Wire Wire Line
+	4150 5300 4050 5300
+Connection ~ 4050 5300
+Wire Wire Line
+	4050 5300 4050 5400
+Wire Wire Line
+	4150 5400 4050 5400
+Connection ~ 4050 5400
+Text Notes 4250 5550 0    50   ~ 0
+.n.f.
+Wire Wire Line
+	5850 5600 4050 5600
+Connection ~ 5850 5600
+Wire Wire Line
+	4050 5400 4050 5600
+Wire Wire Line
+	5850 5300 5850 5600
+Wire Wire Line
+	1950 4300 4250 4300
+$Comp
+L _SamacSys:OPA521 U8
+U 1 1 5D7C980F
+P 5000 4800
+F 0 "U8" H 5000 5618 50  0000 C CNN
+F 1 "OPA521" H 5000 5527 50  0000 C CNN
+F 2 "Package_DFN_QFN:QFN-20-1EP_5x5mm_P0.65mm_EP3.35x3.35mm" H 5006 4054 50  0001 C CIN
+F 3 "http://www.ti.com/lit/ds/symlink/opa521.pdf?HQS=TI-null-null-mousermode-df-pf-null-wwe&DCM=yes&ref_url=https%3A%2F%2Fwww.mouser.de%2F" H 4874 5302 50  0001 C CNN
+	1    5000 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L _SamacSys:BD63573NUV-E2 IC1
+U 1 1 5CA777CB
+P 2550 2150
+AR Path="/5CA777CB" Ref="IC1"  Part="1" 
+AR Path="/5CA7768A/5CA777CB" Ref="IC1"  Part="1" 
+F 0 "IC1" H 3150 2415 50  0000 C CNN
+F 1 "BD63573NUV-E2" H 3150 2324 50  0000 C CNN
+F 2 "Package_SON:VSON-10-1EP_3x3mm_P0.5mm_EP1.2x2mm" H 3600 2250 50  0001 L CNN
+F 3 "https://www.rohm.com/datasheet/BD63573NUV/bd63573nuv-e" H 3600 2150 50  0001 L CNN
+F 4 "H-Bridge Motor Driver, 16V, 3.2A, 10pin" H 3600 2050 50  0001 L CNN "Description"
+F 5 "1" H 3600 1950 50  0001 L CNN "Height"
+F 6 "755-BD63573NUV-E2" H 3600 1850 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=755-BD63573NUV-E2" H 3600 1750 50  0001 L CNN "Mouser Price/Stock"
+F 8 "ROHM Semiconductor" H 3600 1650 50  0001 L CNN "Manufacturer_Name"
+F 9 "BD63573NUV-E2" H 3600 1550 50  0001 L CNN "Manufacturer_Part_Number"
+	1    2550 2150
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

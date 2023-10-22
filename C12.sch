@@ -1,0 +1,40 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 5
+Title "RTB C12 Bus Module"
+Date "2023-10-22"
+Rev "1"
+Comp "Frank Schumacher"
+Comment1 "C12.0"
+Comment2 "Booster"
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Sheet
+S 5600 2100 1750 750 
+U 5B6C6B9D
+F0 "CPU" 79
+F1 "CPU.sch" 79
+$EndSheet
+$Sheet
+S 3150 3250 1700 750 
+U 5B6E0562
+F0 "Track" 79
+F1 "Track.sch" 79
+$EndSheet
+$Sheet
+S 5600 3250 1750 750 
+U 5B6D9789
+F0 "RailcomRX" 79
+F1 "RailcomRX.sch" 79
+$EndSheet
+$Sheet
+S 7900 3250 2000 750 
+U 5CA7768A
+F0 "Booster" 79
+F1 "BOOST.sch" 79
+$EndSheet
+$EndSCHEMATC
