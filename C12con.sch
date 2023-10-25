@@ -172,7 +172,7 @@ Connection ~ 2200 2600
 Wire Wire Line
 	2200 2600 2200 2950
 Text Notes 800  850  0    118  ~ 0
-Track Interface
+Connectors
 Text GLabel 3700 5250 2    50   Output ~ 0
 GNDD
 Wire Wire Line

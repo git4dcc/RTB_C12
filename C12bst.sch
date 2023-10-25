@@ -244,8 +244,6 @@ Wire Wire Line
 Connection ~ 1900 1350
 Wire Wire Line
 	1900 1350 2300 1350
-Wire Wire Line
-	2300 3250 3150 3250
 Connection ~ 4150 3250
 Text GLabel 6550 3250 2    50   Input ~ 0
 GNDD
@@ -257,9 +255,6 @@ Wire Wire Line
 	1950 5100 2600 5100
 Text GLabel 1950 5200 0    50   Output ~ 0
 OPAt
-Connection ~ 3150 3250
-Wire Wire Line
-	3150 3250 4150 3250
 Wire Wire Line
 	2200 4600 2200 5000
 $Comp
@@ -464,7 +459,6 @@ F 3 "~" H 2450 5400 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2600 5300 2600 5400
-Connection ~ 2600 5300
 Wire Wire Line
 	2300 5300 2200 5300
 Connection ~ 2200 5300
@@ -485,7 +479,7 @@ Wire Wire Line
 Wire Wire Line
 	1950 4300 2400 4300
 $Comp
-L _SamacSys:OPA521 U8
+L RTB:OPA521 U8
 U 1 1 5D7C980F
 P 3150 4800
 F 0 "U8" H 3150 5618 50  0000 C CNN
@@ -496,7 +490,7 @@ F 3 "http://www.ti.com/lit/ds/symlink/opa521.pdf?HQS=TI-null-null-mousermode-df-
 	1    0    0    -1  
 $EndComp
 $Comp
-L _SamacSys:BD63573NUV-E2 IC1
+L RTB:BD63573NUV-E2 IC1
 U 1 1 5CA777CB
 P 2550 2150
 AR Path="/5CA777CB" Ref="IC1"  Part="1" 
@@ -514,4 +508,6 @@ F 9 "BD63573NUV-E2" H 3600 1550 50  0001 L CNN "Manufacturer_Part_Number"
 	1    2550 2150
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	2300 3250 4150 3250
 $EndSCHEMATC
