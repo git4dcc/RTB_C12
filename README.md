@@ -5,6 +5,8 @@
 
 The RTB C12 implements a DCC generator, booster and Railcom detector.
 
+[more](https://rtb4dcc.de/hardware/modules/c12/)
+
 # PCB
 <img src="https://rtb4dcc.de/wp-content/uploads/2024/01/C12_1.png" width=600>
 
