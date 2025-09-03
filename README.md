@@ -8,7 +8,7 @@ My homebrew RTB C12 Micro Booster implements a booster, DCC generator and Real-t
 <details>
 <summary>See also</summary>
 
-- [RTB_C10 - Booster](https://github.com/git4dcc/RTB_C10)
+- [RTB_C10 - Master](https://github.com/git4dcc/RTB_C10)
 - [RTB_C11 - Power](https://github.com/git4dcc/RTB_C11)
 - [RTB_P15 - Base](https://github.com/git4dcc/RTB_P15)
 
