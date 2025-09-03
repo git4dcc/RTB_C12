@@ -26,18 +26,19 @@ My homebrew RTB C12 Micro Booster implements a booster, DCC generator and Real-t
 
 ## Booster features
 - **FDX**
-  - FDX bus head (2Mbps full douplex)
+  - FDX bus (2Mbps full douplex)
 - **DCC generator**
   - unlimited decoder stack depth
   - DCC bandwidth monitor
   - DCC-A signature capable (stretched start bit)
+  - DCC-R command set
 - **Booster**
   - Software programmable output voltage (3..18V)
   - 1A continuous current (1.5A peak)
   - Current limiter
   - Short circuit detection
   - Configurable bridge dead time (170ns..3500ns)
-  - DCC signal timing adjustable
+  - DCC signal timing adjustable [micro sec granularity]
   - Railcom Cutout timing adjustable
   - Up to 500kHz fast signaling
   - Voltage and current measurement
@@ -47,18 +48,19 @@ My homebrew RTB C12 Micro Booster implements a booster, DCC generator and Real-t
   - Railcom polarity detection
   - Railcom timing capture for decoder analysis
 - **Service Mode**
-  - can read/write DCC decoder in “service mode”
+  - read/write DCC decoder in “service mode”
   - ACK current detector adjustable
 - firmware update over the bus
 
 # Hardware
 The PCB layout uses SMD footprints with 0.4mm pitch and postly 0603 parts. Reflow soldering is recommended, but with some experience handsoldering is also possible.
+Further, the PCB has been optimized for automated assembly (BOM and Position files as CSV).
 
 <img src="supplemental/images/C12_top.JPG" width=600>
 <img src="supplemental/images/C12_btm.JPG" width=604>
 
 ## PCB
-- 2-layer PCB, FR4, 1.6mm
+- 4-layer PCB, FR4, 1.6mm
 - CPU: AVR64DB48
 - H-Bridge: BD63573NUV
 - Voltage: OPA521
