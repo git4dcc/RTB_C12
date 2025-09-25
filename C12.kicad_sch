@@ -1,0 +1,189 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "e2caae34-38e0-49bd-894c-b8f3f29396f0")
+	(paper "A4")
+	(title_block
+		(title "RTB C12 Module")
+		(date "2025-09-22")
+		(rev "2")
+		(company "Frank Schumacher")
+		(comment 1 "Booster")
+	)
+	(lib_symbols)
+	(sheet
+		(at 124.46 60.96)
+		(size 44.45 19.05)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "00000000-0000-0000-0000-00005b6c6b9d")
+		(property "Sheetname" "CPU"
+			(at 124.46 59.8801 0)
+			(effects
+				(font
+					(size 2.0066 2.0066)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "C12cpu.kicad_sch"
+			(at 124.46 80.8892 0)
+			(effects
+				(font
+					(size 2.0066 2.0066)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "C12"
+				(path "/e2caae34-38e0-49bd-894c-b8f3f29396f0"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 124.46 90.17)
+		(size 44.45 19.05)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "00000000-0000-0000-0000-00005b6d9789")
+		(property "Sheetname" "Railcom"
+			(at 124.46 89.0901 0)
+			(effects
+				(font
+					(size 2.0066 2.0066)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "C12rcm.kicad_sch"
+			(at 124.46 110.0992 0)
+			(effects
+				(font
+					(size 2.0066 2.0066)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "C12"
+				(path "/e2caae34-38e0-49bd-894c-b8f3f29396f0"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 62.23 90.17)
+		(size 43.18 19.05)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "00000000-0000-0000-0000-00005b6e0562")
+		(property "Sheetname" "Connect"
+			(at 62.23 89.0901 0)
+			(effects
+				(font
+					(size 2.0066 2.0066)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "C12con.kicad_sch"
+			(at 62.23 110.0992 0)
+			(effects
+				(font
+					(size 2.0066 2.0066)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "C12"
+				(path "/e2caae34-38e0-49bd-894c-b8f3f29396f0"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 182.88 90.17)
+		(size 50.8 19.05)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "00000000-0000-0000-0000-00005ca7768a")
+		(property "Sheetname" "Booster"
+			(at 182.88 89.0901 0)
+			(effects
+				(font
+					(size 2.0066 2.0066)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "C12bst.kicad_sch"
+			(at 182.88 110.0992 0)
+			(effects
+				(font
+					(size 2.0066 2.0066)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "C12"
+				(path "/e2caae34-38e0-49bd-894c-b8f3f29396f0"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)
