@@ -11,6 +11,7 @@ My homebrew RTB C12 Micro Booster implements a booster, DCC generator and Real-t
 
 - [RTB_C10 - Master](https://github.com/git4dcc/RTB_C10)
 - [RTB_C11 - Power](https://github.com/git4dcc/RTB_C11)
+- [RTB_C13 - Track Sensor](https://github.com/git4dcc/RTB_P15)
 - [RTB_P15 - Base](https://github.com/git4dcc/RTB_P15)
 
 </details>
@@ -27,7 +28,7 @@ My homebrew RTB C12 Micro Booster implements a booster, DCC generator and Real-t
 
 ## Booster features
 - **FDX**
-  - FDX bus (2Mbps full douplex)
+  - FDX bus (2Mbps full duplex)
 - **DCC generator**
   - unlimited decoder stack depth
   - DCC bandwidth monitor
@@ -54,7 +55,7 @@ My homebrew RTB C12 Micro Booster implements a booster, DCC generator and Real-t
 - firmware update over the bus
 
 # Hardware
-The PCB layout uses SMD footprints with 0.4mm pitch and postly 0603 parts. Reflow soldering is recommended, but with some experience handsoldering is also possible.
+The PCB layout uses SMD footprints with 0.4mm pitch and mostly 0603 parts. Reflow soldering is recommended, but with some experience handsoldering is also possible.
 Further, the PCB has been optimized for automated assembly (BOM and Position files as CSV).
 
 <img src="supplemental/images/C12_top.JPG" width=600>
