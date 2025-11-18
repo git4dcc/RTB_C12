@@ -83,6 +83,13 @@ Example: **C12F0001**.hex
 
 [Firmware files](firmware)
 
+## UPDI / Fuses
+The fuse settings as well as the P-code (C12Pxxxx.hex) has to be installed by using UPDI.<br>
+
+| Fuses Setting |
+| --- |
+|<img src=supplemental/images/C12_fuses.jpg width=500>|
+
 # Images
 <img src="supplemental/images/C12_usecase2.JPG" width=900> 
 
