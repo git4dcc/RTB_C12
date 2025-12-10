@@ -34,6 +34,8 @@ My homebrew RTB C12 Micro Booster implements a booster, DCC generator and Real-t
   - DCC bandwidth monitor
   - DCC-A signature capable (stretched start bit)
   - DCC-R command set
+- **Zimo MDU (= Multi Decoder Update) generator**
+  - allows to update Zimo MS/MN decoder
 - **Booster**
   - Software programmable output voltage (3..18V)
   - 1A continuous current (1.5A peak)
