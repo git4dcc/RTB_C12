@@ -34,6 +34,9 @@ My homebrew RTB C12 Micro Booster implements a booster, DCC generator and Real-t
   - DCC bandwidth monitor
   - DCC-A signature capable (stretched start bit)
   - DCC-R command set
+- **MDU generator**
+  - Zimo MDU ([Multi Decoder Update](https://github.com/ZIMO-Elektronik/MDU)) decoder update protocol
+  - update of MS and MN decoder
 - **Booster**
   - Software programmable output voltage (3..18V)
   - 1A continuous current (1.5A peak)
@@ -82,6 +85,13 @@ Example: **C12F0001**.hex
 | **version** | Release version (**####**) |
 
 [Firmware files](firmware)
+
+## UPDI / Fuses
+The fuse settings as well as the P-code (C12Pxxxx.hex) has to be installed by using UPDI.<br>
+
+| Fuses Setting |
+| --- |
+|<img src=supplemental/images/C12_fuses.jpg width=500>|
 
 # Images
 <img src="supplemental/images/C12_usecase2.JPG" width=900> 
