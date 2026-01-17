@@ -32,14 +32,14 @@ My homebrew RTB C12 Micro Booster implements a booster, DCC generator and Real-t
 - **DCC protocol generator**
   - unlimited decoder stack depth
   - DCC bandwidth monitor
-  - DCC-A signature capable (stretched start bit)
-  - DCC-R command set
+  - DCC-A protocol (incl. stretched start bit)
+  - DCC-R protocol (incl. update of RTB decoder on main)
 - **MDU protocol generator**
-  - Zimo MDU ([Multi Decoder Update](https://github.com/ZIMO-Elektronik/MDU)) decoder update
+  - Zimo MDU ([Multi Decoder Update](https://github.com/ZIMO-Elektronik/MDU))
   - update of MS and MN decoder
   - can update multiple MN/MS decoder concurrently
 - **DECUP protocol generator**
-  - Zimo DECUP ([Multi Decoder Update](https://github.com/ZIMO-Elektronik/DECUP)) decoder update
+  - Zimo DECUP ([**Dec**oder **Up**date](https://github.com/ZIMO-Elektronik/DECUP))
   - update of MX decoder
 - **Booster**
   - Software programmable output voltage (3..18V)
