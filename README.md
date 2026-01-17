@@ -29,14 +29,18 @@ My homebrew RTB C12 Micro Booster implements a booster, DCC generator and Real-t
 ## Booster features
 - **FDX**
   - FDX bus (2Mbps full duplex)
-- **DCC generator**
+- **DCC protocol generator**
   - unlimited decoder stack depth
   - DCC bandwidth monitor
   - DCC-A signature capable (stretched start bit)
   - DCC-R command set
-- **MDU generator**
-  - Zimo MDU ([Multi Decoder Update](https://github.com/ZIMO-Elektronik/MDU)) decoder update protocol
+- **MDU protocol generator**
+  - Zimo MDU ([Multi Decoder Update](https://github.com/ZIMO-Elektronik/MDU)) decoder update
   - update of MS and MN decoder
+  - can update multiple MN/MS decoder concurrently
+- **DECUP protocol generator**
+  - Zimo DECUP ([Multi Decoder Update](https://github.com/ZIMO-Elektronik/DECUP)) decoder update
+  - update of MX decoder
 - **Booster**
   - Software programmable output voltage (3..18V)
   - 1A continuous current (1.5A peak)
@@ -55,7 +59,7 @@ My homebrew RTB C12 Micro Booster implements a booster, DCC generator and Real-t
 - **Service Mode**
   - read/write DCC decoder in “service mode”
   - ACK current detector adjustable
-- firmware update over the bus
+- **Firmware update over the bus**
 
 # Hardware
 The PCB layout uses SMD footprints with 0.4mm pitch and mostly 0603 parts. Reflow soldering is recommended, but with some experience handsoldering is also possible.
