@@ -9,10 +9,10 @@ My homebrew RTB C12 Micro Booster implements a booster, DCC generator and Real-t
 <details>
 <summary>See also</summary>
 
-- [RTB_C10 - Master](https://github.com/git4dcc/RTB_C10)
-- [RTB_C11 - Power](https://github.com/git4dcc/RTB_C11)
-- [RTB_C13 - Track Sensor](https://github.com/git4dcc/RTB_C13)
-- [RTB_P15 - Base](https://github.com/git4dcc/RTB_P15)
+- [RTB_C10 - Master](/../../../../git4dcc/RTB_C10)
+- [RTB_C11 - Power](/../../../../git4dcc/RTB_C11)
+- [RTB_C13 - Track Sensor](/../../../../git4dcc/RTB_C13)
+- [RTB_P15 - Base](/../../../../git4dcc/RTB_P15)
 
 </details>
 
@@ -35,12 +35,14 @@ My homebrew RTB C12 Micro Booster implements a booster, DCC generator and Real-t
   - DCC-A protocol (incl. stretched start bit)
   - DCC-R protocol (incl. update of RTB decoder on main)
 - **MDU protocol generator**
-  - Zimo MDU ([Multi Decoder Update](https://github.com/ZIMO-Elektronik/MDU))
+  - Zimo MDU ([Multi Decoder Update](/../../../../ZIMO-Elektronik/MDU))
   - update of MS and MN decoder
   - can update multiple MN/MS decoder concurrently
 - **DECUP protocol generator**
-  - Zimo DECUP ([**Dec**oder **Up**date](https://github.com/ZIMO-Elektronik/DECUP))
+  - Zimo DECUP ([Decoder Update](/../../../../ZIMO-Elektronik/DECUP))
   - update of MX decoder
+- **Doehler & Haass update-protocol generator**
+  - update of D&H decoder
 - **Booster**
   - Software programmable output voltage (3..18V)
   - 1A continuous current (1.5A peak)
