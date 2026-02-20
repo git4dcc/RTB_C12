@@ -2,3 +2,5 @@ date	   nr	type		description
 ---------- ---- --------------- --------------------------------
 02082026   1	enhancement	Implemented a fixed current limit of ~1.5A during the ACK measurement phase for both MDU and DECUP protocols.
 				This ensures reliable ACK detection by decoupling the measurement from the user-defined current limit (ILM).
+
+	   2	enhancement	Implemented the D&H decoder update protocol signal groups.
