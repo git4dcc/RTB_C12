@@ -6,3 +6,8 @@ date	   nr	type		description
            2	enhancement	Implemented the D&H decoder update protocol signal groups.
 
 06152026   3	fix		Bit stretching mode if multiple DCC generators run synchronized
+
+	   4	lab code
+	   5	lab code
+
+07082026   6	modification	Padding handling changed
