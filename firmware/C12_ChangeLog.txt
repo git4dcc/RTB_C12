@@ -11,3 +11,7 @@ date	   nr	type		description
 	   5	lab code
 
 07082026   6	modification	Padding handling changed
+
+	   7	lab code
+
+11242026   8	modification	Changed SX2 ACK capture from AC -> ADC
